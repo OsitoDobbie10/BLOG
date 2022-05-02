@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Punto_afluente",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "X": 395707.195, "Y": 1747285.53, "Desc": "Punto de afluente cuenca rio tulian" }, "geometry": { "type": "Point", "coordinates": [ -87.973782916171245, 15.802092654349858 ] } }
+]
+}

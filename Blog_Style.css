@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+} 
+/*
+body{background-image: url(/Imagenes/Fondo.webp);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;} */
+video{
+  position:fixed;
+  min-width: 100%;
+  min-width: 100%;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+.total{background-color: rgba(128, 128, 128, 0.2);
+      color: black;
+      display: grid;
+      grid-template-columns: repeat(12 , 1fr);
+      width:90%;
+      margin: auto;
+      height: 1000px;
+      gap:10px;}
+.total header{grid-column: 1/-1;
+              height: 200px;
+              background-image: url(GIF.gif);
+              background-repeat:no-repeat ;
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+              color: #ffffff;
+              display: flex;
+              justify-content: space-evenly;} 
+.total header .H1,.H2{width: 50%;}  
+
+ header .H2 p{font-size: 30px;
+              font-weight: 400;
+              margin: 30px 0 0 0;
+              color: white;
+              text-shadow: 0 0 6px yellow;} 
+.sidebar{grid-column: 1/4;
+         height: 600px;} 
+#btn-menu{
+  display: none;
+}
+.sidebar label{
+  display: none;
+}
+.sidebar .datosmenu{
+                    height: 600px;
+                    width:100%;
+                    background-color:rgba(15, 15, 15, 0.836);
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;} 
+.sidebar .datosmenu .logo{width:100%;
+                          height:60px;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          border: 1px solid white;
+                         }
+.datosmenu .logo a{font-size: 25px;
+                   font-weight: 300;
+                   color: white;
+                   text-decoration: none;
+
+                   } 
+.sidebar .datosmenu .menu li{margin-top: 5px auto;
+                             padding: 10px 10px;
+                            list-style: none;
+                            border-bottom: 1px solid white;} 
+
+.datosmenu .menu .profile{position: absolute;
+  bottom: 0;
+  left: 0;
+ list-style: none;
+ width: 100%;
+ height: 90px;
+
+}
+.menu .name{
+  font-size: 25px;
+  color:white;
+}
+.menu .job{
+  font-size:15px;
+  color:white;
+}
+.menu .profile-details{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.profile-details img{
+  width: 70px;
+  height: 70px;
+  border-radius: 25%;
+}
+
+.sidebar .datosmenu .menu a{color: white;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  display:inline-block;
+  width: 100%;} 
+.datosmenu .menu a:hover{background: rgba(255, 255, 255, 0.1);
+                         color:white;
+                         border-radius: 15px;
+                         width:100%;
+                         height:30px;}
+.contenido{grid-column: 4/10;
+           height: 600px;
+           background :rgba(15, 15, 15, 0.836);
+           display: flex;
+           flex-direction: column;
+           color: #fff;
+           position: relative;
+           overflow: scroll;} 
+.contenido .soy_carlos{
+  width: 420px;
+  height: 30px;
+  color: aqua;
+  text-shadow: 0px 0px 6px white;
+  font-size:30px;
+  line-height: 30px; 
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  left:25%;}
+.soy_carlos ul{
+  list-style: none;
+    padding-left: 8px;
+    animation: cambiar 7s infinite;}
+
+/*periodos de la animacion*/
+@keyframes cambiar{
+    0% {margin-top: 0;}
+    20%{margin-top: 0;}
+
+    25% {margin-top: -30px;}
+    50% {margin-top: -30px;}
+
+    55% {margin-top: -60px;}
+    80% {margin-top: -60px;}
+
+    85% {margin-top: -30px;}
+    95% {margin-top: -30px;} 
+
+    100%{margin-top: 0;}}
+  
+  .titulo_gis{
+  color: yellow;
+  text-shadow: 0px 0px 6px white;
+  text-align: center;
+  margin-top: 30px;
+  }
+
+    .content-all{
+      width: 210px;
+      margin: auto;
+      /*darle una perspectiva*/
+      perspective: 800px;
+      position: relative;
+      margin-top: 50px;
+  }
+  
+  .content-carrousel{
+      width: 100%;
+      position: absolute;
+      animation: rotar 20s infinite linear;
+      /*dar prespectiva 3D*/
+      transform-style: preserve-3d;
+  }
+  
+  .content-carrousel:hover{
+      animation-play-state: paused;
+      cursor: pointer;
+  }
+  
+  
+  .content-carrousel figure{
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 0px 0px 20px 0px white;
+      transition: all 1s;
+      
+  }
+  
+  .content-carrousel figure:hover{
+      box-shadow: 0px 0px 0px 0px black;
+      transition: all 1s;
+  }
+  
+  .content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+  .content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+  
+  .content-carrousel img{
+      width: 100%;
+      height: 100%;
+      transition: all 300ms;
+  }
+  
+  .content-carrousel img:hover{
+      transform: scale(1.2);
+      transition: all 1s;
+  }
+  
+  
+  @keyframes rotar{
+      from{
+          transform: rotateY(0deg);
+      }to{
+          transform: rotateY(360deg);
+      }
+  }
+.title_carlos{text-align: center;
+  color:aqua;
+  text-shadow: 0px 0px 6px white;}
+.slider_img{
+  width:100%; 
+  box-shadow: 0 0 0 2px black , 
+  0 15px 50px;
+  overflow: hidden;
+  position: absolute;
+  top:600px;
+  margin-bottom: 20px;}
+
+.slider_img ul{
+ display: flex;
+ align-items: center;
+ width: 400%;
+ /*cambio se le da un nombre al cambio duracion y como se repetira*/
+ animation: cambio 10s infinite;
+ /*para direccionar la animacion del elemento al primer elemento*/
+ animation-direction:alternate;
+ /*curva de trancision de cada imagen*/
+ animation-timing-function:ease-in;
+}
+
+.slider_img li{list-style: none;
+         width: 100%;}
+
+.slider_img ul img{width: 100%;
+             height: 400px;} 
+/*paradas al elemento creado*/
+@keyframes cambio{
+  /*se trabajara con porcentajes y se definira lo siguiente*/
+  /*la primera imagen de los 20s totales estara 4 segundos en la primera imagen*/
+  0% {margin-left: 0;}
+  20%{margin-left: 0;}
+  /*la segunda imagen se desplazara de 5 a 9 segundo de duracion*/
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  /*La tercera imagene desplaara de 10 a 14 segundos de laxduracion*/
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}}
+  .contenedor-texto{
+    font-family:lato,sans-serif;
+    font-family: 20px;
+}
+
+.contenedor-texto .titulo{
+    color: yellow;
+    
+}
+.contenedor-texto{
+    text-align: center;
+}
+.contenedor-texto .titulo span{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 0px 0px 6px rgb(234, 227, 13);
+}
+
+.sidebar2{grid-column: 10/13;
+         height: 600px;
+         background-color:rgba(15, 15, 15, 0.836);
+         } 
+
+.sidebar2 .conte{display: flex;
+                 flex-direction: column;
+                 height: 260px;
+                 background: linear-gradient(180deg, blue 30%, black 70%);
+                 width: 250px;
+                 overflow: hidden;
+                 margin:20px auto;
+                 color: #fff;} 
+.conte .perfil1 img{width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin-left: 100px;}
+.conte .perfil1 h4{text-align:center;} 
+.conte .trabajo{margin: 8px 8px 0 0;}
+.conte .trabajo p{text-align: center;
+                  font-size: 12px;} 
+.conte .escuela{margin: 0 10px 0 0;}
+.conte .escuela p{text-align: center;
+                   font-size: 12px;} 
+.conte .Linkid{display: flex;
+               justify-content: center;
+               margin-top: 5px;}
+.conte .Linkid a{text-decoration: none;
+                 background-color: dodgerblue;
+                 color: #fff;
+                 width: 50px;
+                 text-align: center;} 
+.conte .imglinkid{display: flex;
+                  justify-content: center;}
+.conte .imglinkid img{width: 100px;
+                      height: 50px;} 
+.sidebar2 .redessociales{
+                         height: 200px;}
+.sidebar2 .redessociales h3{text-align: center;
+                           color: #fff;} 
+.iconos{display: flex;
+        justify-content:space-evenly;} 
+[class^="bx bxl"]{color:white;
+                  font-size: 45px;
+                  border-radius: 50%;}
+.iconos a:hover{background-color:black;
+                }
+.sidebar2 .hecho{
+    width: 350px;
+    height: 30px;
+    font-size:30px;
+    line-height: 30px; 
+    display: flex;
+    margin: auto;
+    overflow: hidden; 
+    color:yellowgreen;
+    text-shadow: 0px 0px 6px white;
+   }
+.hecho p{text-align: center;}
+.hecho ul{
+    list-style: none;
+    padding-left: 8px;
+    animation: cambiar 7s infinite;}
+
+
+/*periodos de la animacion*/
+@keyframes cambiar{
+    0% {margin-top: 0;}
+    20%{margin-top: 0;}
+
+    25% {margin-top: -30px;}
+    50% {margin-top: -30px;}
+
+    55% {margin-top: -60px;}
+    80% {margin-top: -60px;}
+
+    85% {margin-top: -30px;}
+    95% {margin-top: -30px;}
+
+    100%{margin-top: 0;}}
+.total footer{grid-column:1/-1;
+             height: 200px;
+             background-color:rgba(15, 15, 15, 0.836);
+             color: #f2f2f2;} 
+footer .datosfooter{display: flex;
+                    flex-direction: row;}
+.datosfooter{margin-top: 10px;}
+.datosfooter a{text-decoration: none;
+               color: #ffffff;}  
+.datosfooter a:hover{background-color: aqua;
+                    color: black;}
+footer .imagen_footer{margin: 20px 0 0 40px;}
+footer .imagen_footer img{width: 100px;
+                          height: 100px;
+                          margin-left: 250px;
+                          border-radius: 20%;}
+
+ 
+@media screen and (max-width:768px){
+  .total{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    width:100%;
+    margin: auto;
+    height: 1380px;
+    gap:10px;
+    overflow: hidden;}
+  .total header{grid-column: 1/-1;
+      height: 200px;
+    
+      color: #ffffff;} 
+  header .H2 p{font-size: 16px; 
+                font-weight: 400;
+                margin: 20px 0 0 0;}
+.sidebar{grid-column: 1/-1;
+         height: 50px;}
+.sidebar label{display: block;
+               font-size: 40px;
+               margin: auto;
+                color: white;}
+.sidebar .datosmenu{
+                  height: 600px;
+                  width:100%;
+                  background-color:rgba(15, 15, 15, 0.836);
+                  display: flex;
+                  flex-direction: column;
+                  position: relative;
+                  margin-left: -100%;
+                  transition: all 0.8s;
+                  z-index: 1;} 
+.sidebar .datosmenu .logo{width:100%;
+                        height:60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid white;
+                       }
+.datosmenu .logo a{font-size: 25px;
+                 font-weight: 300;
+                 color: white;
+                 text-decoration: none;
+
+                 } 
+.sidebar .datosmenu .menu li{margin-top: 5px auto;
+                           padding: 10px 10px;
+                          list-style: none;
+                          border-bottom: 1px solid white;} 
+
+.datosmenu .menu .profile{position: absolute;
+bottom: 0;
+left: 0;
+list-style: none;
+width: 100%;
+height: 90px;
+
+}
+.menu .name{
+display: none;
+}
+.menu .job{
+display: none;
+}
+.menu .profile-details{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.profile-details img{
+display:none;
+}
+
+.sidebar .datosmenu .menu a{color: white;
+font-size: 20px;
+font-weight: 200;
+text-decoration: none;
+display:inline-block;
+width: 100%;
+} 
+.datosmenu .menu a:hover{background: rgba(255, 255, 255, 0.1);
+                       color:white;
+                       border-radius: 15px;
+                       width:100%;
+                       height:30px;}
+#btn-menu:checked ~ .datosmenu{margin: 0;}
+
+  .contenido{grid-column: 1/-1;
+             height: 900px;
+             background-color:rgba(15, 15, 15, 0.836);
+             display: flex;
+             flex-direction: column;
+             color: #fff;
+             position: relative;
+             overflow: hidden;}
+
+.contenido .soy_carlos{
+              width: 420px;
+              height: 30px;
+              color: aqua;
+              text-shadow: 0px 0px 6px white;
+              font-size:20px;
+              line-height: 30px; 
+              display: flex;
+              overflow: hidden;
+              position: absolute;
+              top: 20px;
+              left:12%;}
+            .soy_carlos ul{
+              list-style: none;
+                padding-left: 8px;
+                animation: cambiar 7s infinite;}
+            
+            /*periodos de la animacion*/
+            @keyframes cambiar{
+                0% {margin-top: 0;}
+                20%{margin-top: 0;}
+            
+                25% {margin-top: -30px;}
+                50% {margin-top: -30px;}
+            
+                55% {margin-top: -60px;}
+                80% {margin-top: -60px;}
+            
+                85% {margin-top: -30px;}
+                95% {margin-top: -30px;} 
+            
+                100%{margin-top: 0;}}
+              
+              .titulo_gis{
+              color: yellow;
+              text-shadow: 0px 0px 6px white;
+              text-align: center;
+              margin-top: 30px;
+              }
+            
+      .content-all{
+                  width: 140px;
+                  margin: auto;
+                  /*darle una perspectiva*/
+                  perspective: 700px;
+                  position: relative;
+                  margin-top: 50px;
+              }
+              
+              .content-carrousel{
+                  width: 100%;
+                  position: absolute;
+                  animation: rotar 20s infinite linear;
+                  /*dar prespectiva 3D*/
+                  transform-style: preserve-3d;
+              }
+              
+              .content-carrousel:hover{
+                  animation-play-state: paused;
+                  cursor: pointer;
+              }
+              
+              
+              .content-carrousel figure{
+                  width: 100%;
+                  height: 100px;
+                  overflow: hidden;
+                  position: absolute;
+                  box-shadow: 0px 0px 20px 0px white;
+                  transition: all 1s;
+                  
+              }
+              
+              .content-carrousel figure:hover{
+                  box-shadow: 0px 0px 0px 0px black;
+                  transition: all 1s;
+              }
+              
+              .content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+              .content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+              
+              .content-carrousel img{
+                  width: 100%;
+                  height: 100%;
+                  transition: all 300ms;
+              }
+              
+              .content-carrousel img:hover{
+                  transform: scale(1.2);
+                  transition: all 1s;
+              }
+              
+              
+              @keyframes rotar{
+                  from{
+                      transform: rotateY(0deg);
+                  }to{
+                      transform: rotateY(360deg);
+                  }
+              }
+            .title_carlos{
+              color:aqua;
+              text-shadow: 0px 0px 6px white;
+              position: absolute;
+              top:380px;
+              left: 10%;}
+            .slider_img{
+              width:100%;
+              box-shadow: 0 0 0 2px black , 
+              0 10px 30px;
+              overflow: hidden;
+              position: absolute;
+              top:450px;
+              left: 1%;
+              margin-bottom: 20px;}
+            
+            .slider_img ul{
+             display: flex;
+             align-items: center;
+             width: 400%;
+             /*cambio se le da un nombre al cambio duracion y como se repetira*/
+             animation: cambio 10s infinite;
+             /*para direccionar la animacion del elemento al primer elemento*/
+             animation-direction:alternate;
+             /*curva de trancision de cada imagen*/
+             animation-timing-function:ease-in;
+            }
+            
+            .slider_img li{list-style: none;
+                     width: 100%;}
+            
+            .slider_img ul img{width: 100%;
+                         height: 400px;} 
+            /*paradas al elemento creado*/
+            @keyframes cambio{
+              /*se trabajara con porcentajes y se definira lo siguiente*/
+              /*la primera imagen de los 20s totales estara 4 segundos en la primera imagen*/
+              0% {margin-left: 0;}
+              20%{margin-left: 0;}
+              /*la segunda imagen se desplazara de 5 a 9 segundo de duracion*/
+              25%{margin-left: -100%;}
+              45%{margin-left: -100%;}
+              /*La tercera imagene desplaara de 10 a 14 segundos de laxduracion*/
+              50%{margin-left: -200%;}
+              70%{margin-left: -200%;}
+            
+              75%{margin-left: -300%;}
+              100%{margin-left: -300%;}}
+             
+.sidebar2{grid-column: 1/-1;
+           height: 400px;
+           background-color:rgba(15, 15, 15, 0.836);
+           display: none;}
+.sidebar2 .conte{display: flex;
+  flex-direction: column;
+  height: 260px;
+  background: linear-gradient(180deg, blue 30%, black 70%);
+  width: 250px;
+  overflow: hidden;
+  margin:10px auto;
+  color: #fff;} 
+.conte .perfil1 img{width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     margin-left: 100px;}
+.conte .perfil1 h4{text-align:center;} 
+.conte .trabajo{margin: 8px 8px 0 0;}
+.conte .trabajo p{text-align: center;
+   font-size: 12px;} 
+.conte .escuela{margin: 0 10px 0 0;}
+.conte .escuela p{text-align: center;
+    font-size: 12px;} 
+.conte .Linkid{display: flex;
+justify-content: center;
+margin-top: 5px;}
+.conte .Linkid a{text-decoration: none;
+  background-color: dodgerblue;
+  color: #fff;
+  width: 50px;
+  text-align: center;} 
+.conte .imglinkid{display: flex;
+   justify-content: center;}
+.conte .imglinkid img{width: 100px;
+       height: 50px;} 
+.sidebar2 .redessociales{
+          height: 200px;}
+.sidebar2 .redessociales h3{text-align: center;
+            color: #fff;} 
+.iconos{display: flex;
+justify-content:space-evenly;} 
+[class^="bx bxl"]{color:white;
+   font-size: 45px;
+   border-radius: 50%;}
+.iconos a:hover{background-color:aqua;
+ }
+.sidebar2 .hecho{
+width: 350px;
+height: 30px;
+font-size:30px;
+line-height: 30px; 
+display: flex;
+margin: auto;
+overflow: hidden; 
+color:yellowgreen;
+text-shadow: 0px 0px 6px white;
+display: none;
+}
+.hecho ul{
+list-style: none;
+padding-left: 8px;
+animation: cambiar 7s infinite;}
+
+/*periodos de la animacion*/
+@keyframes cambiar{
+0% {margin-top: 0;}
+20%{margin-top: 0;}
+
+25% {margin-top: -30px;}
+50% {margin-top: -30px;}
+
+55% {margin-top: -60px;}
+80% {margin-top: -60px;}
+
+85% {margin-top: -30px;}
+95% {margin-top: -30px;}
+
+100%{margin-top: 0;}}
+
+.total footer{grid-column:1/-1;
+               height: 180px;
+               background-color:black;
+                color: #f2f2f2;} 
+  footer .datosfooter{display: flex;
+                       flex-direction: row;}
+  .datosfooter{margin-top: 10px;}
+  .datosfooter a{text-decoration: none;
+                    color: #ffffff;
+                  display: block;
+                  font-size:9px;}  
+  .datosfooter p{font-size: 8px;}
+     .datosfooter a:hover{background-color: aqua;
+                         color: black;}
+     footer .imagen_footer{margin: 20px 0 0 40px;}
+     footer .imagen_footer img{width: 100px;
+                               height: 100px;
+                               margin-left: 100px;
+                               border-radius: 20%;}} 

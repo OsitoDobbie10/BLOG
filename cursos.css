@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}  
+video{position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;}
+.total{margin: auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;} 
+.total header{grid-column: 1/-1;
+    height: 200px;
+    background-image: url(GIF.gif);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;} 
+    .total header .H1,.H2{width: 50%;}  
+[class^="bx bxl"]{color:black;
+                  font-size: 45px;
+                  border-radius: 50%;}
+.total header .H1{display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   justify-content: space-evenly;} 
+header .H1 .iconos{display: flex;
+                   justify-content: space-evenly;}
+header .H1 .iconos a:hover{background-color: #ffffff;
+                         color: black;} 
+.Inicio a{display: inline-block;
+            text-decoration: none;
+            color: #ffffff;}
+.Inicio a:hover{background-color: #ffffff;
+                color: black;}
+header .H2 p{font-size: 30px;
+             font-weight: 400;
+              margin: 30px 0 0 0;} 
+
+.total .contenido{grid-column: 1/-1;
+                height: 2190px;
+                display:flex;
+                flex-direction:column;
+                color:#f2f2f2;
+                background: rgba(0,0,0,0.5); 
+               } 
+[class^="img1"]{width: 200px; height: 200px; margin: 0 auto;}
+.img1:hover{border: 1px solid #f08080;
+            transform: rotate(-3deg);
+            box-shadow: 0 4px 80px 0 lightblue, 0 6px 20px 0 rgba(0,0,0,0.19);} 
+.cursos .primeros{display: flex;
+                  justify-content: space-evenly;
+                  height: 500px;
+                  margin-top: 10px;
+                  margin-bottom: 20px;}
+.primeros .python {display: flex;
+                  flex-direction:column;
+                  height: 500px;
+                  width: 30%;
+                  border: 1px solid white;
+                  box-shadow: 5px 4px 5px 4px lightblue;} 
+.primeros .Catastro{display: flex;
+                    flex-direction:column;
+                    height: 500px;
+                    width: 30%;
+                    border: 1px solid white;
+                    box-shadow: 5px 4px 5px 4px lightblue;} 
+.primeros .GEE{display: flex;
+               flex-direction:column;
+               height: 500px;
+               width: 30%;
+               border: 1px solid white;
+               box-shadow: 5px 4px 5px 4px lightblue;}  
+.primeros a{margin: 5px auto; 
+            text-decoration: none; 
+            display: inline-block; 
+            color: #f2f2f2;
+             border-radius: 5%; 
+            background-color:darkgray;}
+.primeros a:hover{background:black; color: #ffffff;}
+        
+.primeros h3{text-align: center;}
+.primeros p{text-align: justify;}
+
+.contenido h2{text-align: center;}
+.total footer{grid-column:1/-1;
+             height: 200px;
+             background:rgba(15, 15, 15, 0.836);
+             color: #f2f2f2;} 
+footer .datosfooter{display: flex;
+                          flex-direction: row;}
+             .datosfooter{margin-top: 10px;}
+             .datosfooter a{text-decoration: none;
+                            color: #ffffff;}  
+             .datosfooter a:hover{background-color: aqua;
+                                 color: black;}
+             footer .imagen_footer{margin: 20px 0 0 40px;}
+             footer .imagen_footer img{width: 100px;
+                                       height: 100px;
+                                       margin-left: 250px;
+                                       border-radius: 20%;}
+
+@media screen and (max-width:768px){
+    .total{
+        color: black;
+        display: grid;
+        grid-template-columns: repeat(12 , 1fr);
+        width:100%;
+        height: 4200px;
+        gap:10px;
+        overflow: hidden;}
+        .total header{grid-column: 1/-1;
+          height: 200px;
+          color: #ffffff;
+          display: flex;
+          justify-content: space-evenly;
+          position: sticky;
+          top: 0;} 
+          .total header .H1,.H2{width: 50%;}  
+      [class^="bx bxl"]{color:black;
+                        font-size: 35px;
+                        border-radius: 50%;}
+       .total header .H1{display: flex;
+                         flex-direction: column;
+                         align-items: center;
+                         justify-content: space-evenly;} 
+      header .H1 .iconos{display: flex;
+                         justify-content: space-evenly;}
+      header .H1 .iconos a:hover{background-color: #ffffff;
+                               color: black;} 
+       .Inicio a{display: inline-block;
+                  text-decoration: none;
+                  color: #ffffff;}
+      .Inicio a:hover{background-color: #ffffff;
+                      color: black;}
+      header .H2 p{font-size: 15px;
+                   font-weight: 400;
+                    margin: 10px 0 0 0;}
+    .total .contenido{grid-column: 1/-1;
+                        height: 3800px;
+                        display:flex;
+                        flex-direction:column;
+                        color:#f2f2f2;
+                        background: rgba(0,0,0,0.5);
+                      
+                        } 
+    [class^="img1"]{width: 100px; height: 100px; margin: 0 auto;}
+        .img1:hover{border: 1px solid #f08080;
+                    transform: rotate(-3deg);
+                    box-shadow: 0 4px 80px 0 lightblue, 0 6px 20px 0 rgba(0,0,0,0.19);} 
+    .cursos .primeros{display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          height: 1000px;
+                          margin-top: 20px;
+                          }
+        .primeros .python {display: flex;
+                          flex-direction:column;
+                          height: 600px;
+                          width: 400px;
+                          border: 1px solid white;
+                          box-shadow: 5px 4px 5px 4px lightblue;
+                          margin-top: 20px;
+                          } 
+        .primeros .Catastro{display: flex;
+                            flex-direction:column;
+                            height: 600px;
+                            width:400px;
+                            border: 1px solid white;
+                            box-shadow: 5px 4px 5px 4px lightblue;
+                            margin-top: 20px;} 
+        .primeros .GEE{display: flex;
+                       flex-direction:column;
+                       height: 600px;
+                       width: 400px;
+                       border: 1px solid white;
+                       box-shadow: 5px 4px 5px 4px lightblue;
+                       margin-top: 20px;}  
+        .primeros a{margin: 5px auto; 
+                    text-decoration: none; 
+                    display: inline-block; 
+                    color: #f2f2f2;
+                     border-radius: 5%; 
+                    background-color:darkgray;}
+        .primeros a:hover{background:black; color: #ffffff;}
+                
+        .primeros h3{text-align: center;}
+        .primeros p{text-align: justify;}
+        
+        .contenido h2{text-align: center;}
+    
+
+
+      .total footer{grid-column:1/-1;
+                        height: 200px;
+                        background-color:black;
+                         color: #f2f2f2;} 
+           footer .datosfooter{display: flex;
+                                flex-direction: row;}
+           .datosfooter{margin-top: 10px;}
+           .datosfooter a{text-decoration: none;
+                             color: #ffffff;
+                           display: block;
+                           font-size:8px;}   
+           .datosfooter p{font-size: 10px;}
+              .datosfooter a:hover{background-color: aqua;
+                                  color: black;}
+              footer .imagen_footer{margin: 20px 0 0 40px;}
+              footer .imagen_footer img{width: 100px;
+                                        height: 100px;
+                                        margin-left: 200px;
+                                        border-radius: 20}
+}

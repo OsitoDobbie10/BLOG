@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+video{
+  position:fixed;
+  min-width: 100%;
+  min-width: 100%;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+.total{margin: auto;
+       display: grid;
+       width: 90%;
+       grid-template-columns: repeat(12, 1fr);
+       gap: 10px;} 
+.total header{grid-column: 1/-1;
+        height: 200px;
+        background-image: url(GIF.gif);
+        background-repeat:no-repeat ;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-evenly;
+       } 
+.H2 p{font-size: 30px;}
+.total header .H1,.H2{width: 50%;}  
+[class^="bx bxl"]{color:black;
+                      font-size: 45px;
+                      border-radius: 50%;}
+.total header .H1{display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: space-evenly;} 
+header .H1 .iconos{display: flex;
+                  justify-content: space-evenly;}
+ .H1 .iconos a{text-decoration: none;
+               color: #ffffff;} 
+.H1 .iconos a:hover{background: #ffffff;
+                    color:black;}                  
+.Inicio a{text-decoration: none;
+           color: #ffffff;}
+.Inicio a:hover{background: #ffffff;
+                 color:black;}
+.total .contenido_datos{grid-column: 1/-1;
+                        height: 3800px;  
+                        display:flex;
+                        flex-direction:column;
+                        background:rgba(15, 15, 15, 0.836);
+                        color:#f2f2f2;
+                        margin-top: 5px;
+                        margin-bottom: 25px;} 
+.contenido_datos h2{text-align: center;
+                     margin-bottom: 20px;
+                     margin-top: 10px;}
+.contenido_datos .selector{margin-left: 25%;
+                            width: 600px;
+                            margin-bottom: 40px;} 
+                  /*estilos mapa */
+.contenido_datos .mapa{
+                      width: 800px;
+                      height: 600px;
+                      box-shadow: 0 0 0 10px yellowgreen , 
+                                  0 10px 30px;
+                      margin: 10px auto;} 
+.info {
+    background: rgba(17, 230, 10,0.4);
+    color:white;
+    font-size: 12px;
+    padding: 10px 5px;}
+.info h4{text-align: center;}
+
+.legend { 
+  line-height: 18px; 
+  border:1px solid black;
+  background:rgba(0,0,0,0.4);
+  color:white;
+  }  
+.legend I { 
+  width: 18px;
+  height: 18px; 
+  float: left; 
+  margin-right: 8px; 
+  opacity: 0.7; 
+  } 
+.contenido_datos .mapa2{ width: 800px;
+  height: 600px;
+  box-shadow: 0 0 0 10px yellowgreen , 
+              0 10px 30px;
+  margin: 10px auto;}
+.contenido_datos .mapa3{
+  width: 800px;
+  height: 600px;
+  box-shadow: 0 0 0 10px yellowgreen , 
+              0 10px 30px;
+  margin: 10px auto;
+}
+.info2{
+  background: rgba(0,0,0,0.4);
+  color:#f2f2f2; 
+  font-size: 15px;
+  padding: 10px 5px;
+  text-align: center;}
+.info2 img{border-radius: 20%;
+           border: 1px solid yellow;}
+.contenido_datos .mapa4{
+            width: 800px;
+            height: 600px;
+            box-shadow: 0 0 0 10px yellowgreen , 
+                        0 10px 30px;
+            margin: 10px auto;
+          }
+.contenido_datos .mapa5{
+  width: 1000px;
+  height: 800px;
+  box-shadow: 0 0 0 10px yellowgreen , 
+              0 15px 50px;
+  margin: 10px auto;
+}
+.info4{
+  background: rgba(0,0,0,0.8);
+  color:#f2f2f2;
+  font-size: 15px;
+  padding: 10px 5px;
+  text-align: center;
+}
+.info6{
+  background: rgba(0,0,0,0.4);
+  color:#f2f2f2; 
+  font-size: 13px;
+  padding: 10px 5px;
+  text-align: center; 
+}
+.info6 img{
+         border: 1px solid yellow;} 
+.info6 li{ list-style: none;}
+.title{text-align: center;}
+.title_cuenca{ text-align: center;}
+.mapstore1 iframe{width:100%;
+                  margin-top: 10px;}
+    .mapstore2 iframe{width:100%;
+          margin-top: 10px;} 
+
+
+.total footer{grid-column:1/-1;
+                            height: 200px;
+                            background:rgba(15, 15, 15, 0.836); 
+                          color: #f2f2f2;} 
+              footer .datosfooter{display: flex;
+                                  flex-direction: row;}
+                     .datosfooter{margin-top: 10px;}
+                     .datosfooter a{text-decoration: none;
+                                    color: #ffffff;}  
+                     .datosfooter a:hover{background-color: aqua;
+                                         color: black;}
+                     footer .imagen_footer{margin: 20px 0 0 40px;}
+                     footer .imagen_footer img{width: 100px;
+                                               height: 100px;
+                                               margin-left: 250px;
+                                               border-radius: 20%;}
+
+@media screen and (max-width: 768px){
+  .total{
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    width:100%;
+    height: 3180px;
+    gap:10px;
+    overflow: hidden;}
+    .total header{grid-column: 1/-1;
+      height: 200px;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-evenly;
+      position: sticky;
+      top: 0;} 
+      .total header .H1,.H2{width: 50%;}  
+  [class^="bx bxl"]{color:black;
+                    font-size: 35px;
+                    border-radius: 50%;}
+   .total header .H1{display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     justify-content: space-evenly;} 
+  header .H1 .iconos{display: flex;
+                     justify-content: space-evenly;}
+  header .H1 .iconos a:hover{background-color: #ffffff;
+                           color: black;} 
+   .Inicio a{display: inline-block;
+              text-decoration: none;
+              color: #ffffff;}
+  .Inicio a:hover{background-color: #ffffff;
+                  color: black;}
+  header .H2 p{font-size: 15px;
+               font-weight: 400;
+                margin: 10px 0 0 0;} 
+                .total .contenido_datos{grid-column: 1/-1;
+                  height: 1900px;
+                  display:flex;
+                  flex-direction:column;
+                  background:rgba(15, 15, 15, 0.836);
+                  color:#f2f2f2;
+                  margin-top: 5px;
+                  margin-bottom: 25px;} 
+[class^="img1"]{width: 100%;
+         height: 400px;}
+h2{text-align: center;}
+.total .contenido_datos{grid-column: 1/-1;
+  height: 2750px;
+  display:flex;
+  flex-direction:column;
+  background:rgba(15, 15, 15, 0.836);
+  color:#f2f2f2;
+  margin-top: 5px;
+  margin-bottom: 25px;} 
+.contenido_datos .selector{display: none;} 
+/*estilos mapa */
+.contenido_datos .mapa{
+width: 100%;
+height: 500px;
+box-shadow: 0 0 0 10px yellowgreen , 
+          0 10px 30px;
+margin: 10px auto;} 
+.legend { 
+  line-height: 18px; 
+  border:1px solid black;
+  background:rgba(0,0,0,0.4);
+  color:white;
+  }  
+.legend I { 
+  width: 18px;
+  height: 18px; 
+  float: left; 
+  margin-right: 8px; 
+  opacity: 0.7; 
+  }   
+  
+.info {
+background: rgba(17, 230, 10,0.4);
+color:white;
+font-size: 8px;
+padding: 8px 5px;}
+.info h4{text-align: center;}
+.contenido_datos .mapa2{ width: 100%;
+height: 500px;
+box-shadow: 0 0 0 10px yellowgreen , 
+0 10px 30px;
+margin: 10px auto;}
+.contenido_datos .mapa3{
+width: 100%;
+height: 600px;
+box-shadow: 0 0 0 10px yellowgreen , 
+0 10px 30px;
+margin: 10px auto;
+}
+.info2{
+background: rgba(0,0,0,0.4);
+color:#f2f2f2;
+font-size: 9px;
+padding: 5px 5px;
+text-align: center;}
+.info2 img{border-radius: 20%;
+border: 1px solid yellow;}
+.contenido_datos .mapa4{
+width: 100%;
+height: 600px;
+box-shadow: 0 0 0 10px yellowgreen , 
+0 10px 30px; 
+margin: 10px auto;
+}
+.info4{
+background: rgba(0,0,0,0.8);
+color:#f2f2f2;
+font-size: 9px;
+padding: 6px 5px;
+text-align: center;}
+
+.contenido_datos .mapa5{
+ display: none;
+}
+.info6{
+  display: none;
+}
+
+
+
+.title{display: none;}
+ .title_cuenca{display:none}
+.mapstore1 iframe{display: none;}
+.mapstore2 iframe{display: none;} 
+footer .datosfooter{display: flex;
+                    flex-direction: row;}
+.datosfooter{margin-top: 10px;}
+.datosfooter a{text-decoration: none;
+                 color: #ffffff;
+               display: block;
+               font-size:8px;}  
+.datosfooter p{font-size: 8px;}
+  .datosfooter a:hover{background-color: aqua;
+                      color: black;}
+  footer .imagen_footer{margin: 20px 0 0 40px;}
+  footer .imagen_footer img{width: 100px;
+                            height: 100px;
+                            margin-left: 180px;
+                            border-radius: 20}
+  
+}

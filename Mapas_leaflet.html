@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas leaflet webmapping</title>
+    <link rel="shortcut icon" href="Ico.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--referenciar el estilo css-->
+    <link rel="stylesheet" href="mapas_leaflet.css">
+    <!--referecniar el estilo js-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!--referecniar el estilo minimap-->
+    <link rel="stylesheet"  type="text/css" href="Control.MiniMap.css">
+    <!--referecniar el estilo legend-->
+    <link rel="stylesheet" type="text/css" href="leaflet.legend.css">
+    <!--referenciar el estilo del panel-->
+    <link rel="stylesheet" href="leaflet-panel-layers.css">
+</head>
+<body>
+    <video src="Fondo.mp4" autoplay loop muted></video> 
+    <div class="total">
+        <header>
+            <div class="H2">
+                <p> Calos Archaga Analista SIG y <br> desarrollador GIS. <i class='bx bx-book-heart'></i> </p>
+                </div>
+            <div class="H1">
+                <div class="redessociales">
+                    <h3>Sigueme en mis redes sociales.</h3>
+                    <div class="iconos">
+                    <a href="https://www.facebook.com/osito.dobbie.9">
+                    <i class='bx bxl-facebook'></i></a></a>
+                    <a href="https://www.instagram.com/carlos_cabina10/?hl=es"> 
+                    <i class='bx bxl-instagram'></i></a> 
+                    <a href="https://www.youtube.com/channel/UCxDQpd6WUsqUHTZcMMp5igA/featured"> 
+                    <i class='bx bxl-youtube'></i></a> 
+                    <a href="https://github.com/OsitoDobbie10"><i class='bx bxl-github'></i></a>
+                    </div> 
+                    </div>
+                    <div class="Inicio">
+                    <a href="BLOG.html">Pahina Inicio.</a> 
+                    </div>  
+            </div>
+        </header>
+       <div class="contenido_datos">
+           <h2>Mapa de uso de suelo DC.</h2>
+          
+        <div id="map" class="mapa"> 
+    
+        </div>  
+        <h2>Mapa Matriz AHP ubicacion optima de Caoba y Cedro Teupasenti.</h2>
+     </select>
+     <div id="map2" class="mapa2"> 
+ 
+     </div>  
+        <h2>Mapa Riesgo de lluvia San Pedro Sula.</h2>
+     <div id="map3" class="mapa3"> 
+ 
+     </div>  
+        <h2>Mapa Patrimonio inmueble Distrito Central.</h2>
+     <div id="map4" class="mapa4">  
+    </div>
+    <h2 class = "title_cuenca">Mapa Parametros geomorfologicos cuenca rio Tulia.</h2>
+    <div id="map5" class="mapa5">  
+    </div>
+
+    </div>  
+         
+        <footer> 
+            <div class="datosfooter">
+                <div class="generales">
+                    <p>Carlos Archaga derechos reservados sitio, Honduras Distrito Central</p>  
+                </div> 
+                <div class="imagen_footer">
+                    <img src="Perfil.webp" alt="Carlos">
+                    <p>Carlos Archaga Lic. Ciencias y tecnologia de la informacion geografica.</p> 
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--referecniar el js-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <!--referecniar el minial js-->
+    <script src="Control.MiniMap.js"></script>
+    <!--referenciar el legend js-->
+    <script src="leaflet.legend.js"></script> 
+
+    <!--referenciar las capas-->
+    <script src="Uso_suelo_DC.js"></script> 
+    <script src="Ubicacion_caoba.js"></script>
+    <script src="Ubicacion_cedro.js"></script>
+    <script src="Ubicacion_caoba.js"></script>
+    <script src="Ubicacion_cedro.js"></script>
+    <script src="Albergues_COPECO.js"></script>
+    <script src="Estructura_urbana_SPS.js"></script>
+    <script src="Riesgos_inundacion_SPS.js"></script>
+    <script src="Areas_verdes_DC.js"></script>
+    <script src="Edificios_DC.js"></script>
+    <script src="Mercados_DC.js"></script> 
+    <script src="cuenca_generada.js"></script> 
+    <script src="cuenca_declarada.js"></script>
+    <script src="Rio.js"></script>
+    <script src="curvas.js"></script>
+    <!--importar el js-->
+    <!--importar  js que trabajaremos-->
+  <script src="Mapas_leaflet.js"></script>  
+  <script src="Mapas_leaflet2.js"></script>  
+  <script src="Mapas_leaflet3.js"></script>
+  <script src="Mapas_leaflet4.js"></script>
+  <script src="Mapas_leaflet5.js"></script>
+  
+
+</body>
+</html>
